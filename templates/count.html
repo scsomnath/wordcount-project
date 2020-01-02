@@ -1,0 +1,15 @@
+<h1>There are {{ wordcount }} word(s) in the text</h1>
+
+<h1>Original Text:</h1>
+
+{{ fulltext }}
+
+<h1> Occured words: </h1>
+{% for word, count in sortedword %}
+
+{{ word }} -> {{ count }}
+<br />
+
+{% endfor %}
+
+<a href="{% url 'start' %}">Try Again</a>
