@@ -19,5 +19,6 @@ from . import resource
 
 urlpatterns = [
     path('', resource.home,name='start'),
-    path('count/', resource.count, name='count')    
+    path('count/', resource.count, name='count'),
+    path('about/',resource.about,name='about')    
 ]
